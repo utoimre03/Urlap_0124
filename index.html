@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap gyakorlás</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mozi</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <!-- kereten lévő szöveg -->
+            <legend>Néző adatai</legend>
+            <label for="neve">Név: </label>
+            <input type="text" id="neve" name="nev" value="Zámbó Jimmy" size="10"><br>
+            <!-- label for és input egyezzen! -->
+            <label for="kedvenc_film">Kedvenc film: </label>
+            <input type="text" id="kedvenc_film" name="film" value="A hős" size="20">
+            <br>
+            <label for="filmek_szama">Filmek száma/hét: </label>
+            <input type="range" id="filmek_szama" name="film_szam" oninput="this.form.f_sz.value=this.value" max="20">
+            <input type="number" name="f_sz" size="6" oninput="this.form.film_szam.value=this.value">
+            <br>
+            <input type="submit" value="Küldés">
+        </fieldset>
+    </form>
+</body>
+</html>

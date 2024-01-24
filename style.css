@@ -1,0 +1,14 @@
+/* minden beviteli mezőre érvényes */
+input {
+    margin: 5px;
+}
+
+/* csak az adott típusú bev.-i mezőre érvényes */
+input[type=submit]{
+    background-color: lightblue;
+}
+
+/* az aktuálisan íródó mező tulajdonsága */
+input[type=text]:focus{
+    background-color: lightblue;
+}
