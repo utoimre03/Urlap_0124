@@ -22,7 +22,11 @@
             <input type="range" id="filmek_szama" name="film_szam" oninput="this.form.f_sz.value=this.value" max="20">
             <input type="number" name="f_sz" size="6" oninput="this.form.film_szam.value=this.value">
             <br>
-            <input type="submit" value="Küldés">
+            <label for="mozi_datum">Utolsó mozilátogatás: </label>
+            <input type="date" name="datum"><br>
+            <div>
+                <input type="submit" value="Küldés">
+            </div>
         </fieldset>
     </form>
 </body>

@@ -12,3 +12,7 @@ input[type=submit]{
 input[type=text]:focus{
     background-color: lightblue;
 }
+
+div {
+    text-align: center;
+}
